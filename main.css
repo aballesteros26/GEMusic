@@ -4,8 +4,9 @@
 	box-sizing: border-box;
 }
 body{
-	background: url("PHOTO-2024-09-16-21-16-38.jpg") no-repeat fixed top right;
-	
+	background: url("images/blackbackground13yu.jpg") no-repeat fixed top right;
+	font-size: 20px;
+	color:red;
 }
 #container{
 	width: 800px;
