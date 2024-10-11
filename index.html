@@ -11,7 +11,14 @@
 <body>
 	<div id="container">
 	<header><h1 class="inria-sans-bold-italic">Welcome to GE Music</h1></header>			  
-		<nav></nav>			  
+		<nav>
+			<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#what's new">What's New</a></li>
+  <li><a href="#contact">Videos</a></li>
+  <li style="float:right"><a class="active" href="#contact">Contact</a></li>
+</ul>
+		</nav>			  
 		<section>
 		<article class="left"><img src="images/greg.jpg" alt="Cloning a GitHub site"
 		usemap="#Starlink" width="150" height="150">
@@ -23,7 +30,38 @@
 			<p><a href="Starlink.html">Whats the Drummers Job</a></p>
 			<a href="https://www.google.com/">Google</a>
 			<p><a href="Equipment.html">Equipment</a></p>
+			<svg height="130" width="500">
+  <defs>
+    <lineargradient id="grad1">
+      <stop offset="0%" stop-color="yellow" />
+      <stop offset="100%" stop-color="red" />
+    </lineargradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+</svg>
+	<audio controls autoplay>
+			<source src="DON LUIS EL TEJANO .wav" type="audio/mpeg">
+			</audio>		
+			
 			</article>
+		
+			<article class="left">
+				<form action="">
+					<p>Get Our Weekly Updates</p>
+			<label for="firstName">First Name:</label>
+			<input type="text" id="firstName" name="firstName"><br>
+			<label for="lastName">Last Name:</label>
+			<input type="text" id="lastName" name="lastName"><br>	  
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br>
+			<input type="submit" value="Submit" align="right">
+			</form>
+				
+			</article>
+			
+			
+		
 		</section>
 		<footer>Copyright Ale Ballesteros</footer>
 	</div>

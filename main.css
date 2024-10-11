@@ -92,6 +92,30 @@ article a:active{
   font-weight: 700;
   font-style: italic;
 }
+nav{
+	margin:0 25px 30px 0;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: red;
+}
+nav li {
+	float: left;
+}
+nav li a {
+	display: block;
+	color:aliceblue;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav li a:hover:not(.active) {
+	background-color:cornflowerblue;
+}
+
 
 
 
