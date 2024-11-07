@@ -7,7 +7,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-</head>
+<button onclick="getlocation()">Geo Location</button>
+	<p id="demo"></p>
+	</head>
 <body>
 	<div id="container">
 	<header><h1 class="inria-sans-bold-italic">Welcome to GE Music</h1></header>			  
@@ -66,4 +68,21 @@
 		<footer>Copyright Ale Ballesteros</footer>
 	</div>
 </body>
+	<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
 </html>
